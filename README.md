@@ -1,6 +1,16 @@
 # Pre-screening Assignment
 This repository contains a pre-screening assignment/problem statement designed to evaluate a candidate's skills in Linux, DevOps, Docker, and troubleshooting.
 
+
+# Solution
+## Frontend
+docker build -t fe_img .
+
+docker run -d -p 3000:3000 --name frontend fe_img
+
+## Backend
+Added Postgres and backend services in backend/docker-compose.yml and added OS environment variables in Python script.
+docker-compose up -d --build
 ------
 ------
 
